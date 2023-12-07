@@ -21,12 +21,12 @@ public class Triangulo {
         return lado_tres;
     }
 
-    public double perimetro_triangulo(){
+    public double perimetro(){
         double perimetro=(this.getLado_uno()+this.getLado_dos()+this.getLado_tres());
         return perimetro;
     }
 
     public void mostrar_triangulo(){
-        System.out.println("\nEl perimetro del triangulo es: "+perimetro_triangulo());
+        System.out.println("\nEl perimetro del triangulo es: "+perimetro());
     }
 }

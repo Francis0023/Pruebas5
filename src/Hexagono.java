@@ -10,12 +10,13 @@ public class Hexagono extends Pentagono{
         return lado_seis;
     }
 
-    public double perimetro_hexagono(){
+    @Override
+    public double perimetro() {
         double perimetro=(getLado_uno()+getLado_dos()+getLado_tres()+getLado_cuatro()+getLado_cinco()+getLado_seis());
         return perimetro;
     }
 
     public void mostrar_hexagono(){
-        System.out.println("\nEl perimetro del hexagono es: "+perimetro_hexagono());
+        System.out.println("\nEl perimetro del hexagono es: "+perimetro());
     }
 }

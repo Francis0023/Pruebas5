@@ -10,12 +10,13 @@ public class Cuadrilatero extends Triangulo{
         return lado_cuatro;
     }
 
-    public double perimetro_cuadrilatero(){
+    @Override
+    public double perimetro() {
         double perimetro=(this.getLado_uno()+this.getLado_dos()+this.getLado_tres()+this.getLado_cuatro());
         return perimetro;
     }
 
     public void mostrar_cuadrado(){
-        System.out.println("\nEl perimetro del cuadrilatero es: "+perimetro_cuadrilatero());
+        System.out.println("\nEl perimetro del cuadrilatero es: "+perimetro());
     }
 }

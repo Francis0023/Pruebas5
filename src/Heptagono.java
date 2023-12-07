@@ -10,13 +10,14 @@ public class Heptagono extends Hexagono{
         return lado_siete;
     }
 
-    public double perimetro_heptagono(){
+    @Override
+    public double perimetro() {
         double perimetro=(getLado_uno()+getLado_dos()+getLado_tres()+getLado_cuatro()+getLado_cinco()+getLado_seis()+getLado_siete());
         return perimetro;
     }
 
     public void mostrar_heptagono(){
-        System.out.println("El perimetro del heptago es: "+perimetro_heptagono());
+        System.out.println("El perimetro del heptago es: "+perimetro());
     }
 }
 
