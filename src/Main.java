@@ -28,32 +28,32 @@ public class Main {
                                 System.out.println();
                                 break;
                             case 2:
-                                System.out.println("Ingrese los lados del Triángulo: ");
-                                Triangulo triangulo_uno = new Triangulo(scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat());
+                                System.out.println("Ingrese el lado del Triángulo: ");
+                                Triangulo triangulo_uno = new Triangulo(scanner.nextFloat());
                                 triangulo_uno.mostrar_triangulo();
                                 System.out.println();
                                 break;
                             case 3:
-                                System.out.println("Ingrese los lados del Cuadrilátero: ");
-                                Cuadrilatero cuadrado_uno = new Cuadrilatero(scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat());
+                                System.out.println("Ingrese el lado del Cuadrilátero: ");
+                                Cuadrilatero cuadrado_uno = new Cuadrilatero(scanner.nextFloat());
                                 cuadrado_uno.mostrar_cuadrado();
                                 System.out.println();
                                 break;
                             case 4:
-                                System.out.println("Ingrese los lados del Pentágono: ");
-                                Pentagono pentagono_uno = new Pentagono(scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat());
+                                System.out.println("Ingrese el lado del Pentágono: ");
+                                Pentagono pentagono_uno = new Pentagono(scanner.nextFloat());
                                 pentagono_uno.mostrar_pentagono();
                                 System.out.println();
                                 break;
                             case 5:
-                                System.out.println("Ingrese los lados de un Hexágono: ");
-                                Hexagono hexagono_uno = new Hexagono(scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat());
+                                System.out.println("Ingrese el lado del Hexágono: ");
+                                Hexagono hexagono_uno = new Hexagono(scanner.nextFloat());
                                 hexagono_uno.mostrar_hexagono();
                                 System.out.println();
                                 break;
                             case 6:
-                                System.out.println("Ingrese los lados de un Heptágono: ");
-                                Heptagono heptagono_uno = new Heptagono(scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat(), scanner.nextFloat());
+                                System.out.println("Ingrese el lado del Heptágono: ");
+                                Heptagono heptagono_uno = new Heptagono(scanner.nextFloat());
                                 heptagono_uno.mostrar_heptagono();
                                 System.out.println();
                                 break;

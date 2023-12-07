@@ -1,18 +1,12 @@
-public class Cuadrilatero extends Triangulo{
+public class Cuadrilatero extends Figuras_2{
 
-    public float lado_cuatro;
-    public Cuadrilatero(float lado_uno, float lado_dos, float lado_tres, float lado_cuatro) {
-        super(lado_uno, lado_dos, lado_tres);
-        this.lado_cuatro=lado_cuatro;
-    }
-
-    public float getLado_cuatro() {
-        return lado_cuatro;
+    public Cuadrilatero(float lado) {
+        super(lado);
     }
 
     @Override
     public double perimetro() {
-        double perimetro=(this.getLado_uno()+this.getLado_dos()+this.getLado_tres()+this.getLado_cuatro());
+        double perimetro=this.getLado()*4;
         return perimetro;
     }
 

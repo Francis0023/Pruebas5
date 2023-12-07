@@ -1,4 +1,5 @@
 public class Figura3D {
+    float aristas;
     double calcularVolumen() {
         return 0;
     }

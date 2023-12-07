@@ -1,21 +1,14 @@
-public class Pentagono extends Cuadrilatero{
-    public float lado_cinco;
+public class Pentagono extends Figuras_2{
 
-    public Pentagono(float lado_uno, float lado_dos, float lado_tres, float lado_cuatro, float lado_cinco) {
-        super(lado_uno, lado_dos, lado_tres, lado_cuatro);
-        this.lado_cinco = lado_cinco;
-    }
-
-    public float getLado_cinco() {
-        return lado_cinco;
+    public Pentagono(float lado) {
+        super(lado);
     }
 
     @Override
     public double perimetro() {
-        double perimetro= (getLado_uno()+getLado_dos()+getLado_tres()+getLado_cuatro()+getLado_cinco());
+        double perimetro= getLado()*5;
         return perimetro;
     }
-
 
     public void mostrar_pentagono(){
         System.out.println("El perimetro del pentagono es: "+perimetro());
