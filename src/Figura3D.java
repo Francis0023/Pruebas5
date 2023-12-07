@@ -1,10 +1,16 @@
 public class Figura3D {
     float aristas;
-    double calcularVolumen() {
-        return 0;
+    public Figura3D(float aristas) {
+        this.aristas = aristas;
     }
-    // Método para calcular el área de la superficie (por defecto, se establece a 0)
-    double calcularAreaSuperficie() {
-        return 0;
+
+    public float getAristas() {
+        return aristas;
+    }
+    double x;
+
+    public double volumen(){
+        double volumen=this.getAristas();
+        return volumen;
     }
 }

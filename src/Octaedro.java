@@ -1,8 +1,12 @@
 class Octaedro extends Figura3D {
-    double arista;
+    public Octaedro(float aristas) {
+        super(aristas);
+    }
 
-    Octaedro(double arista) {
-        this.arista = arista;
+    @Override
+    public double volumen() {
+        double volumen=(1.0 / 3.0) * Math.sqrt(2) * arista * arista * arista;
+        return volumen;
     }
 
     @Override
